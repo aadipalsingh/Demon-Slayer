@@ -104,21 +104,10 @@ function WorldSection() {
                     muted
                     loop
                     playsInline
-                    poster="/world-poster.png"
                     className="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-screen"
                 >
                     <source src="/world-video.mp4" type="video/mp4" />
                 </video>
-                {/* Fallback Image if video doesn't load/play */}
-                <div className="absolute inset-0 -z-10">
-                    <Image
-                        src="/world-poster.png"
-                        alt="World Background"
-                        fill
-                        className="object-cover opacity-50"
-                        priority
-                    />
-                </div>
 
                 {/* Vintage Gradient Overlay (Left-focused for text readability) */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-black/70 to-transparent z-10" />
